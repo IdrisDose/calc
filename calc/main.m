@@ -5,16 +5,18 @@
 
 #import <Foundation/Foundation.h>
 
-int main(int argc, const char * argv[]) {
+int main(int argc, const char **argv) {
     @autoreleasepool {
-        if (argc <= 0){
-            NSLog(@"There are no equations.");
-        } else {
-            for(int i = 0; i < (sizeof argv); i++){
-                printf("CHAR: %s \n",argv[i]);
-            }
-        //NSLog(@"Hello, World!");
-        }
+        //Grab args into a string from char array
+        //Convert Args to arithmatic
+        //Do some error checking
+        //Then math it all.
+        //Print Answer.
+        //Run Test Case
+        //Submit.
+        
+        //~22.5hrs worth of code???
+        //Chyea.
     }
     return 0;
 }
