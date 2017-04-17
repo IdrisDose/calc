@@ -15,6 +15,13 @@ int main(int argc, const char **argv) {
         //Run Test Case
         //Submit.
         
+        for(int i = 0; i < (sizeof(**argv)); i++){
+            
+            NSLog(@"CHAR: %c", *argv[i]);
+            
+        }
+        
+        
         //~22.5hrs worth of code???
         //Chyea.
     }
