@@ -1,0 +1,3 @@
+!#/bin/bash
+
+make && cd obj && ./calc 1+1 && cd ..
