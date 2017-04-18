@@ -1,4 +1,4 @@
-obj/calc.obj/main.m.o: main.m \
+obj/calc.obj/*.m.o: main.m \
   /usr/GNUstep/Local/Library/Headers/Foundation/Foundation.h \
   /usr/GNUstep/Local/Library/Headers/GNUstepBase/GSVersionMacros.h \
   /usr/GNUstep/Local/Library/Headers/GNUstepBase/GSConfig.h \
@@ -143,7 +143,8 @@ obj/calc.obj/main.m.o: main.m \
   /usr/GNUstep/Local/Library/Headers/Foundation/NSXMLDTD.h \
   /usr/GNUstep/Local/Library/Headers/Foundation/NSXMLDTDNode.h \
   /usr/GNUstep/Local/Library/Headers/Foundation/NSXMLElement.h \
-  /usr/GNUstep/Local/Library/Headers/Foundation/NSXMLParser.h
+  /usr/GNUstep/Local/Library/Headers/Foundation/NSXMLParser.h \
+  operators/operator.m operators/operator.h
 
 /usr/GNUstep/Local/Library/Headers/Foundation/Foundation.h:
 
@@ -434,3 +435,7 @@ obj/calc.obj/main.m.o: main.m \
 /usr/GNUstep/Local/Library/Headers/Foundation/NSXMLElement.h:
 
 /usr/GNUstep/Local/Library/Headers/Foundation/NSXMLParser.h:
+
+operators/operator.m:
+
+operators/operator.h:
