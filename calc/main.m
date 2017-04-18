@@ -16,6 +16,7 @@ int main(int argc, const char **argv) {
         //Print Answer.
         //Run Test Case
         //Submit.
+        /*
         id oper = [Operator alloc];
         [oper init];
 
@@ -30,10 +31,22 @@ int main(int argc, const char **argv) {
 
         //Test Calc;
         [oper setTheString:@"kek"];
+        NSLog(@"%@", equation);
 
+        NSLog(@"Now doing maths?");
         NSString *temp = [oper testString];
-        NSExpression *expression = [NSExpression expressionWithFormat:equation];
-        NSNumber *result = [expression expressionValueWithObject:nil context:nil];
+        NSNumber *result = 0;
+        NSExpression *expression = nil;
+
+        @try {
+            expression = [NSExpression expressionWithFormat:equation];
+            result = [expression expressionValueWithObject:nil context:nil];
+        }
+        @catch (NSException *exception) {
+            NSLog(@" ERROR: Something broke with the maths!");
+        }
+
+
 
         NSLog(@"Equation: %@",equation);
         NSLog(@"%@",temp);
@@ -42,4 +55,35 @@ int main(int argc, const char **argv) {
         //Chyea.
     }
     return 0;
+    */
+
+    NSArray *arguments = [[NSProcessInfo processInfo] arguments];
+    typedef NSExpression Expression;
+
+
+       @try {
+
+           Expression * expression = [[Expression alloc] init];
+
+           [expression expressionWithStrings:arguments];
+
+
+
+           result = [expression evaluate];
+
+           NSLog(@"%d", result);
+
+
+
+       } @catch (NSException * e) {
+
+           NSLog(@"%@", e.reason);
+
+           return -1;
+
+       }
+
+
+
+       return 0;
 }
