@@ -8,10 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		050330721E767CEF005AB44A /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 050330711E767CEF005AB44A /* GameKit.framework */; };
-		05C4D9521E7616DF00AB9F52 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C4D9511E7616DF00AB9F52 /* main.m */; };
 		05C4D95F1E76182500AB9F52 /* CalcTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05C4D95E1E76182500AB9F52 /* CalcTest.swift */; };
 		05F9F69D1E9DE9FD00694D73 /* calc in Resources */ = {isa = PBXBuildFile; fileRef = 05C4D94E1E7616DF00AB9F52 /* calc */; };
-		05F9F6A81E9DEF7200694D73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05C4D9511E7616DF00AB9F52 /* main.m */; };
+		885096C71EA85E3200AA9AC2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885096C61EA85E3200AA9AC2 /* main.swift */; };
+		886FE21D1EADBCEB00116BF8 /* calc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886FE21C1EADBCEB00116BF8 /* calc.swift */; };
+		886FE2201EADDB2500116BF8 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886FE21F1EADDB2500116BF8 /* Validation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,11 +40,14 @@
 /* Begin PBXFileReference section */
 		050330711E767CEF005AB44A /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		05C4D94E1E7616DF00AB9F52 /* calc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = calc; sourceTree = BUILT_PRODUCTS_DIR; };
-		05C4D9511E7616DF00AB9F52 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		05C4D95C1E76182500AB9F52 /* CalcTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalcTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		05C4D95E1E76182500AB9F52 /* CalcTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcTest.swift; sourceTree = "<group>"; };
 		05C4D9601E76182500AB9F52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05F9F69E1E9DEDD500694D73 /* CalcTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CalcTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		885096C31EA85DD200AA9AC2 /* calc-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "calc-Bridging-Header.h"; sourceTree = "<group>"; };
+		885096C61EA85E3200AA9AC2 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		886FE21C1EADBCEB00116BF8 /* calc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = calc.swift; sourceTree = "<group>"; };
+		886FE21F1EADDB2500116BF8 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +99,10 @@
 		05C4D9501E7616DF00AB9F52 /* calc */ = {
 			isa = PBXGroup;
 			children = (
-				05C4D9511E7616DF00AB9F52 /* main.m */,
+				885096C31EA85DD200AA9AC2 /* calc-Bridging-Header.h */,
+				885096C61EA85E3200AA9AC2 /* main.swift */,
+				886FE21C1EADBCEB00116BF8 /* calc.swift */,
+				886FE21F1EADDB2500116BF8 /* Validation.swift */,
 			);
 			path = calc;
 			sourceTree = "<group>";
@@ -160,6 +167,7 @@
 				TargetAttributes = {
 					05C4D94D1E7616DF00AB9F52 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					05C4D95B1E76182500AB9F52 = {
@@ -203,7 +211,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05C4D9521E7616DF00AB9F52 /* main.m in Sources */,
+				886FE21D1EADBCEB00116BF8 /* calc.swift in Sources */,
+				886FE2201EADDB2500116BF8 /* Validation.swift in Sources */,
+				885096C71EA85E3200AA9AC2 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +221,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				05F9F6A81E9DEF7200694D73 /* main.m in Sources */,
 				05C4D95F1E76182500AB9F52 /* CalcTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -318,20 +327,30 @@
 		05C4D9561E7616DF00AB9F52 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "calc/calc-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		05C4D9571E7616DF00AB9F52 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "calc/calc-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		05C4D9621E76182500AB9F52 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CalcTest/Info.plist;
@@ -348,6 +367,7 @@
 		05C4D9631E76182500AB9F52 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = CalcTest/Info.plist;

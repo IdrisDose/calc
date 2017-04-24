@@ -1,18 +1,20 @@
 //
-//  Operators.h
-//  proj1
+//  Operator.h
+//  calc
 //
-//  Created by Jesse Clark on 7/4/17.
-//  Copyright © 2017 Jesse Clark. All rights reserved.
+//  Created by Dose on 19/4/17.
+//  Copyright © 2017 UTS. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import "Operator.h"
-#import "Evaluatable.h"
 
 typedef int (^operationBlock)(int a, int b);
 
 @interface Operator : NSObject
+
+- (void) addPlus;
+- (void) addMinus;
 
 // one way to model operators is to have each appearance
 // invoke a predefined instance of the "operator" class,
@@ -22,13 +24,6 @@ typedef int (^operationBlock)(int a, int b);
 @property NSString * name; // eg "+"
 @property int precedence;
 @property operationBlock operate;
-
-
-// another approach is to store subexpressions for later.
-// defining a consistent interface for these would make the
-// Tree-Balancing Algorithm viable
-@property NSObject <Evaluatable> * left;
-@property NSObject <Evaluatable> * right;
 
 
 
